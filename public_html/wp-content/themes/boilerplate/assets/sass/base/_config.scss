@@ -1,0 +1,105 @@
+/* ----------------------------------------------------------
+    Variables
+------------------------------------------------------------*/
+
+
+/* Global
+------------------------------------------------------------*/
+
+
+$body-bg:  				#ffffff;
+$text-color: 			#000000;
+
+
+
+
+/* Links
+------------------------------------------------------------*/
+
+
+$text-link: 			#db0606;
+$text-link-hover: 		darken($text-link, 15%);
+
+
+
+
+/* Color / Background Color
+------------------------------------------------------------*/
+
+$color-default:         #a2ad00 !default;
+$color-primary:         #a2ad00 !default;
+$color-gray:   			#c0c0c0 !default;
+$color-orange:     		#ff5a00 !default;
+$color-green:     		#24ff00 !default;
+$color-dark:     		#000000 !default;
+
+
+
+/* Typography
+------------------------------------------------------------*/
+
+$font-family-base:      'adobe_caslon', Georgia, sans-serif;
+$font-family-websafe: 	Arial, sans-serif;
+$font-size-base:      	19px;
+$line-height-base:  	$font-size-base + 5;
+$heading-h1:           	20px;
+$heading-h2: 			18px;
+$heading-h3: 			16px;
+$heading-h4: 			14px;
+$heading-h5: 			12px;
+$heading-h6: 			10px;
+$light: 				100;
+$regular: 				400;
+$bold: 					600;
+
+
+
+
+/* Buttons
+------------------------------------------------------------*/
+
+$btn-default-color:     #ffffff !default;
+$btn-default-bg:        #a2ad00 !default;
+$btn-default-border:    #ccc !default;
+$btn-font-weight: 		normal !default;
+
+
+$btn-primary-bg: 		#a2ad00 !default;
+$btn-primary-color: 	#ffffff !default;
+
+
+
+/* Form
+------------------------------------------------------------*/
+
+$input-bg: 				#fafafa !default;
+$input-border: 			#dddddd !default;
+$input-border-radius:  	0px !default;
+$input-color:          	lighten(#000, 0) !default;
+
+
+/* Grid
+------------------------------------------------------------*/
+
+$grid-gutter-default:  			30px !default;
+$grid-gutter-xs:  				10px !default;
+$grid-gutter-sm:  				20px !default;
+$grid-gutter-md:  				40px !default;
+$grid-gutter-lg:  				50px !default;
+$grid-gutter-xl:  				60px !default;
+
+
+
+
+/* Container
+------------------------------------------------------------*/
+
+$container-sm:  			((720px + $grid-gutter-default)) !default;
+$container-default:  		((1038px + $grid-gutter-default)) !default;
+$container-lg:  			((1247px + $grid-gutter-default)) !default;
+
+
+$container-gutter-sm:   	((940px + $grid-gutter-sm)) !default;
+$container-gutter-md:   	((940px + $grid-gutter-md)) !default;
+$container-gutter-lg:   	((940px + $grid-gutter-lg)) !default;
+

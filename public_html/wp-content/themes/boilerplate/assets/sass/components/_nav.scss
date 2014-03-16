@@ -1,0 +1,140 @@
+/* ----------------------------------------------------------
+    Navigation
+------------------------------------------------------------*/
+
+.nav li {
+	display: block;
+	line-height: 17px;
+	margin-bottom: 15px;
+}
+
+.nav li a {
+	font-size: 21px;
+	color: #220100;
+	font-style: italic;
+	font-weight: 500;
+	background: none;
+}
+
+.nav li a:hover {
+	background: url(../images/dot.png) 0 82% repeat-x;
+	text-decoration: none;
+}
+
+.nav li.active a {
+	background: url(../images/dot.png) 0 82% repeat-x;
+	text-decoration: none;
+}
+
+@-moz-document url-prefix() { 
+  	.nav li a:hover {
+		background: url(../images/dot.png) 0 100% repeat-x;
+		text-decoration: none;
+		padding-bottom: 3px;
+	}
+	.nav li.active a {
+		background: url(../images/dot.png) 0 100% repeat-x;
+		text-decoration: none;
+		padding-bottom: 3px;
+	}
+}
+
+.mobile-menu-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 8;
+    display: none;
+}
+
+.nav-toggle {
+	position: relative;
+	float: right;
+	padding: 2px 0px;
+	margin-top: 6px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	display: none;
+	z-index: 99;
+}
+
+.nav-collapse {
+	position: fixed;
+	top: 232px;
+	width: 181px;
+	.form-block {
+		margin-bottom: 30px;
+	}
+}
+
+
+
+/* Paging */
+
+.paging {
+	font-size: 22px;
+	color: #dd0000;
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+
+/* ----------------------------------------------------------
+    Responsive
+------------------------------------------------------------*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.nav-collapse {
+		width: 158px;
+	}
+}
+
+
+@media (min-width: 1025px) and (max-width: 1304px) {
+	.nav-collapse {
+		width: 140px;
+		top: 212px;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+	.nav-toggle {
+		display: block;
+	}
+	.nav-collapse {
+		width: 100%;
+		height: 0;
+		overflow: hidden;
+		position: fixed;
+		top: 54px;
+		left: 0;
+		width: 100%;
+		z-index: 99999999;
+		background: #ffffff;
+		clear: both;
+		br {
+			display: none;
+		}
+		.form-block {
+			margin-top: 20px;
+			padding: 0 15px 0 15px;
+			margin-bottom: 0;
+		}
+	}
+
+	.nav li a {
+		display: block;
+		padding: 0 15px 0 15px;
+		background: none !important;
+	}
+
+
+}

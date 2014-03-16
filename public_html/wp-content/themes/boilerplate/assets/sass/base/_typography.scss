@@ -1,0 +1,215 @@
+/* ----------------------------------------------------------
+    Typography
+------------------------------------------------------------*/
+
+
+@font-face {
+    font-family: 'adobe_caslon';
+    src: url('../fonts/acaslonpro-bold-webfont.eot');
+    src: url('../fonts/acaslonpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acaslonpro-bold-webfont.woff') format('woff'),
+         url('../fonts/acaslonpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/acaslonpro-bold-webfont.svg#adobe_caslon_probold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'adobe_caslon';
+    src: url('../fonts/acaslonpro-bolditalic-webfont.eot');
+    src: url('../fonts/acaslonpro-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acaslonpro-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/acaslonpro-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/acaslonpro-bolditalic-webfont.svg#adobe_caslon_probold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'adobe_caslon';
+    src: url('../fonts/acaslonpro-italic-webfont.eot');
+    src: url('../fonts/acaslonpro-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acaslonpro-italic-webfont.woff') format('woff'),
+         url('../fonts/acaslonpro-italic-webfont.ttf') format('truetype'),
+         url('../fonts/acaslonpro-italic-webfont.svg#adobe_caslon_proitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'adobe_caslon';
+    src: url('../fonts/acaslonpro-semibolditalic-webfont.eot');
+    src: url('../fonts/acaslonpro-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acaslonpro-semibolditalic-webfont.woff') format('woff'),
+         url('../fonts/acaslonpro-semibolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/acaslonpro-semibolditalic-webfont.svg#adobe_caslon_probold_italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'adobe_caslon';
+    src: url('../fonts/acaslonpro-semibold-webfont.eot');
+    src: url('../fonts/acaslonpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acaslonpro-semibold-webfont.woff') format('woff'),
+         url('../fonts/acaslonpro-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/acaslonpro-semibold-webfont.svg#adobe_caslon_probold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adobe_caslon';
+    src: url('../fonts/acaslonpro-regular-webfont.eot');
+    src: url('../fonts/acaslonpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/acaslonpro-regular-webfont.woff') format('woff'),
+         url('../fonts/acaslonpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/acaslonpro-regular-webfont.svg#adobe_caslon_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+p {
+    line-height:$line-height-base;
+    margin-bottom: $line-height-base;
+}
+
+a {
+    color:$text-link;
+    text-decoration:none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.text-link {
+    background: url(../images/dot.png) 0 82% repeat-x;
+    text-decoration: none;
+    color: #000000;
+    &:hover {
+        background: none;
+        text-decoration: none;
+    }
+}
+
+@-moz-document url-prefix() { 
+    .text-link {
+        background: url(../images/dot.png) 0 100% repeat-x;
+        padding-bottom: 3px;
+    }
+}
+
+
+
+
+.heading-group {
+    display: block;
+    margin-bottom: 20px;
+    @include clear();
+    h1,h2,h3,h4,h5,h6 {
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+}
+
+.heading-main {
+    padding: 0 0 0 10px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 42px;
+    color: #000000;
+	margin-top:2px;
+	margin-bottom:18px;
+}
+
+h2 {
+    font-size: 33px;
+    color: #000000;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+
+
+blockquote {
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    p {
+        line-height: 26px;
+    }
+}
+
+/* ----------------------------------------------------------
+    Responsive
+------------------------------------------------------------*/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media (min-width: 992px) {
+    
+}
+
+
+@media (max-width: 767px) {
+    
+    h1 {
+        font-size: 30px;
+        color: #000000;
+	}
+
+    h2 {
+        font-size: 25px;
+        color: #000000;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+
+
+}

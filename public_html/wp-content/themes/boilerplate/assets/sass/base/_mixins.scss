@@ -1,0 +1,35 @@
+@mixin bodyStyles() {
+	background:$body-bg;
+    font-family:$font-family-base;
+    font-size:$font-size-base;
+    text-align:left;
+    color:$text-color;
+    -webkit-font-smoothing:antialiased;
+}
+
+@mixin imageReplacement() {
+	height:0;
+	display:block;
+	overflow:hidden;
+}
+
+
+@mixin clear() {
+	&:after {
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}
+}
+
+
+@mixin button-styles($color, $background) {
+	color: $color;
+	background: $background;
+	&:hover {
+		background-color: darken($background, 3%);
+	}
+}
+

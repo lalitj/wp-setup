@@ -1,0 +1,328 @@
+/* ----------------------------------------------------------
+    Responsive
+------------------------------------------------------------*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	body {
+		overflow-x: hidden;
+	}
+
+	/* Header 
+	------------------------------------------------------------*/
+
+	.tagline {
+		font-size: 18px;
+		color: #928585;
+		background: url(../images/tagline-graphic.png) 100% 0 no-repeat;
+		display: block;
+		min-height: 146px;
+		padding-top: 78px;
+		padding-right: 146px;
+		position: absolute;
+		max-width: 450px;
+		top: 0;
+		right:-30px;
+		font-style: italic;
+		text-align: right;
+	}
+
+	.header {
+		.logo {
+			a {
+				background: url(../images/logo-small.png) 0 0 no-repeat;
+				width: 156px;
+				height: 126px;
+			}
+		}
+	}
+
+	/* About 
+	------------------------------------------------------------*/
+
+
+	/* Quote */
+
+	.quote {
+		background: url(../images/divider.png) 0 0 repeat-x;
+		padding-top: 15px;
+		position: relative;
+		text-align: center;
+		img {
+			margin-top: 0 !important;
+			margin-bottom: 20px !important;
+		}
+	}
+
+
+	/* Partners */
+
+	.partners {
+		font-size: 17px;
+		.logos {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+		li {
+			float: none;
+			display: block;
+			margin-bottom: 10px;
+			margin-right: 18px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1304px) {
+	.container {
+		width: 990px;
+	}
+	.tagline {
+		font-size: 18px;
+	}
+	.header {
+		.logo {
+			a {
+				background: url(../images/logo-small.png) 0 0 no-repeat;
+				width: 156px;
+				height: 126px;
+			}
+		}
+	}
+	.main {
+		padding-top: 158px;
+	}
+}
+
+
+@media (min-width: 1305px) {
+	.container {
+		width: 1270px;
+	}
+	.tagline {
+		font-size: 18px;
+	}
+}
+
+
+@media (min-width: 1600px) {
+	
+}
+
+
+
+
+@media (max-width: 767px) {
+
+	body {
+		border: none;
+		padding-top: 55px;
+		font-size: 14px;
+	}
+
+	p {
+		line-height: 18px;
+		margin-bottom: 18px;
+	}
+
+
+	/* Header 
+	------------------------------------------------------------*/
+
+	.header {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: 8px 15px 8px 15px;
+		border-top: 5px solid $color-dark;
+		z-index: 99999;
+		border-bottom: 1px solid $color-dark;
+		background: url(../images/body-bg.png) 0 0 repeat;
+		.logo {
+			display: block;
+			margin-bottom: 0px;
+			margin-top: 3px;
+			a {
+				background: url(../images/logo-xsmall.png) 0 0 no-repeat;
+				background-size: 100px 27px;
+				width: 100px;
+				height: 27px;
+			}
+		}
+	}
+	
+
+	/* Main
+	------------------------------------------------------------*/
+
+	.main {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.content-block {
+		padding: 0 0px 0 0px;
+		@include clear();
+	}
+
+	.content {
+		padding: 0 0 0 0px;
+	}
+
+	.content-box {
+		background: url(../images/pattern-bg.png) 0 0 repeat;
+		@include box-shadow(rgba(black, 0.2) 0 0 5px);
+		padding: 20px 15px;
+	}
+
+
+	/* Articles
+	------------------------------------------------------------*/
+
+	.grid-sizer {
+		width: 100%;
+	}
+
+	.articles {
+		.img-default {
+			width: 100%;
+			display: block;
+			height: auto !important;
+		}
+		.col {
+			float: none;
+			display: block;
+			width: 100%;
+			padding: 0 0px 0px 0px;
+			height: auto !important;
+			margin-bottom: 10px;
+		}
+
+		.article-details {
+			font-size: 13px !important;
+			margin-top: -65px !important;
+			padding: 0 30px 0 30px !important;
+			h1 {
+				font-size: 20px !important;
+			}
+			p {
+				line-height: 14px !important;
+				margin-bottom: 15px !important;
+			}
+		}
+
+	}
+
+	.article-content:hover {
+		opacity:1;
+	}
+
+	.article-content.active:hover {
+		opacity:1;
+	}
+
+
+	/* Quote */
+
+
+	.quote-content {
+		padding-top: 10px;
+	}
+
+
+
+	/* Footer
+	------------------------------------------------------------*/
+
+	.footer {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		font-size: 10px;
+		.social {
+			display: block;
+			right:15px;
+			li {
+				float: left;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.footer-logo {
+		float: none;
+		display: block;
+		margin-bottom: 5px;
+		margin-right: 0px;
+		a {
+			background: url(../images/footer-logo.png) 0 0 no-repeat;
+			width: 70px;
+			height: 16px;
+			display: block;
+			text-indent: -999999px;
+		}
+	}
+
+	.copyright {
+		float: none;
+		display: block;
+		margin-bottom: 0px;
+		line-height: 22px;
+	}
+
+	.site {
+		line-height: 16px;
+		float: left;
+		margin-left:0px;
+	}
+
+
+
+	/* About 
+	------------------------------------------------------------*/
+
+
+	/* Quote */
+
+	.quote {
+		background: url(../images/divider.png) 0 0 repeat-x;
+		padding-top: 15px;
+		position: relative;
+		text-align: center;
+		img {
+			margin-top: 0 !important;
+			margin-bottom: 20px !important;
+		}
+	}
+
+
+	/* Partners */
+
+	.partners {
+		font-size: 17px;
+		.logos {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+		li {
+			float: none;
+			display: block;
+			margin-bottom: 10px;
+			margin-right: 18px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+}
+
+

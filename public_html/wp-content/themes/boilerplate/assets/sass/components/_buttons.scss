@@ -1,0 +1,74 @@
+/* ----------------------------------------------------------
+    Buttons
+------------------------------------------------------------*/
+
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 6px 15px;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 18px;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+button {
+	background: none;
+	border: none;
+	margin: 0;
+	cursor: pointer;
+	padding: 0;
+}
+
+.btn-primary {
+	@include button-styles($btn-primary-color, $btn-primary-bg);
+	@include text-shadow(rgba(black, 0.5) 0px 0px 4px);
+}
+
+.btn-dark {
+	background: $color-dark;
+	color: #ffffff;
+	font-family: $font-family-base;
+	padding-top: 10px;
+	padding-bottom: 6px;
+	&:hover {
+		background: lighten($color-dark, 15%);
+	}
+}
+
+@-moz-document url-prefix() { 
+    .btn-dark {
+		background: $color-dark;
+		color: #ffffff;
+		font-family: $font-family-base;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+}
+
+
+
+
+/* ----------------------------------------------------------
+    Responsive
+------------------------------------------------------------*/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media (min-width: 992px) {
+	
+}
+
+
+@media (max-width: 767px) {
+
+
+
+}

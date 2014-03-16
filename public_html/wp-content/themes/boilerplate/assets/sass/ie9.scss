@@ -1,0 +1,18 @@
+.nav li a:hover {
+	background: url(../images/dot.png) 0 100% repeat-x;
+	text-decoration: none;
+}
+
+.nav li.active a {
+	background: url(../images/dot.png) 0 100% repeat-x;
+	text-decoration: none;
+}
+
+.articles .article-details h1 a {
+	display: inline;
+	background: url(../images/line.png) 0 89% repeat-x;
+}
+
+.text-link {
+    background: url(../images/dot.png) 0 100% repeat-x;
+}

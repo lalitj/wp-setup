@@ -1,0 +1,22 @@
+/* line 1, ../sass/ie8.scss */
+.nav li a:hover {
+  background: url(../images/dot.png) 0 100% repeat-x;
+  text-decoration: none;
+}
+
+/* line 6, ../sass/ie8.scss */
+.nav li.active a {
+  background: url(../images/dot.png) 0 100% repeat-x;
+  text-decoration: none;
+}
+
+/* line 11, ../sass/ie8.scss */
+.articles .article-details h1 a {
+  display: inline;
+  background: url(../images/line.png) 0 89% repeat-x;
+}
+
+/* line 16, ../sass/ie8.scss */
+.text-link {
+  background: url(../images/dot.png) 0 100% repeat-x;
+}

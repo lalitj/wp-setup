@@ -1,0 +1,10 @@
+#sass cache
+*.sass-cache*
+
+#htaccess
+*.htaccess*
+
+#Php Storm#
+*.idea*
+
+*Thumbs.db*

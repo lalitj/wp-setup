@@ -1,0 +1,176 @@
+/* ----------------------------------------------------------
+    Form
+------------------------------------------------------------*/
+
+
+
+.input-text {
+	display: block;
+	width: 100%;
+	line-height: 1.4;
+	margin: 0;
+	vertical-align: middle;
+	padding: 6px 10px;
+	font-size:14px;
+	color: $input-color;
+	background: $input-bg;
+	border: 1px solid $input-border;
+	border-radius: $input-border-radius;
+	font-family: $font-family-websafe;
+}
+
+
+.input-label {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-size: $font-size-base;
+	line-height: 1.4;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+	em {
+		font-weight: normal;
+	}
+}
+
+textarea {
+	width: 100%;
+	resize:none;
+	overflow: auto;
+	padding: 6px 10px;
+	font-size:14px;
+	color: $input-color;
+	background: $input-bg;
+	border: 1px solid $input-border;
+	border-radius: $input-border-radius;
+	font-family: $font-family-websafe;
+	margin-bottom: 12px;
+}
+
+
+/* Form Group */
+
+
+.form-group {
+	@include clear();
+}
+
+.form-inline {
+	.input-text {
+		margin-bottom: 20px;
+	}
+}
+
+.form-block {
+	.form-group {
+		margin-bottom: 20px;
+		display: block;
+		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+.radio {
+	label {
+		margin-bottom: 10px;
+		cursor: pointer;
+		display: block;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+.input-checkbox {
+	-webkit-appearance: checkbox;
+	position: relative;
+	top: 4px;
+	margin-right: 9px;
+}
+
+.input-radio {
+	-webkit-appearance: radio;
+	position: relative;
+	margin-right: 9px;
+}
+
+
+.icheckbox {
+    margin: 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icons/icon-checkbox.png) 0 0 no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    float: left;
+}
+.icheckbox {
+    background-position: 0 0;
+}
+.icheckbox.checked {
+    background-position: 0px -16px;
+    cursor: default;
+}
+
+.iradio {
+    margin: 0;
+    padding: 0;
+    width: 17px;
+    height: 17px;
+    background: url(../images/icons/icon-radio.png) 0 0 no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    float: left;
+}
+
+.iradio {
+    background-position: 0 0;
+}
+.iradio.checked {
+    background-position: 0px -17px;
+    cursor: default;
+}
+
+
+
+/* Search Box */
+
+.search-box {
+	.input-text {
+		border: 1px solid #8d8d8d;
+		background: #ffffff;
+		padding: 8px 10px;
+	}
+}
+
+
+
+
+/* ----------------------------------------------------------
+    Responsive
+------------------------------------------------------------*/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media (min-width: 992px) {
+	
+}
+
+
+@media (max-width: 767px) {
+
+
+
+}
